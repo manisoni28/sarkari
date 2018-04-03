@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:example="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            style="@style/Toolbar"
+            app:contentInsetStart="0dp">
+
+            <ImageView
+                android:id="@+id/guillotine_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu" />
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/activity_group"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_action_house_active" />
+
+            <com.ghn.android.views.FontTextView
+                android:id="@+id/home_tittle"
+                style="@style/TextView.GuillotineItem.Selected"
+                android:text="@string/activity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/electronic_group"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <ImageView
+                android:id="@+id/elec_icon"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_action_ads" />
+
+            <com.ghn.android.views.FontTextView
+                android:id="@+id/elec_tittle"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/admit_cards" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/furniture_group"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <ImageView
+                android:id="@+id/furniture_icon"
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_action_jobs" />
+
+            <com.ghn.android.views.FontTextView
+                android:id="@+id/furniture_tittle"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/govt_jobs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ajab_gajab_group"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <ImageView
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_upload_news" />
+
+            <com.ghn.android.views.FontTextView
+                android:id="@+id/ajab_gajab_group_tittle"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/bank_jobs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contactus_group"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <ImageView
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_contact_us" />
+
+            <com.ghn.android.views.FontTextView
+                android:id="@+id/epaper_tittle"
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/defence_jobs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/epaper_group"
+            style="@style/LinearLayout.GuillotineItem"
+            android:visibility="visible">
+
+            <ImageView
+                style="@style/ImageView.GuillotineItem"
+                android:src="@drawable/ic_epaper" />
+
+            <com.ghn.android.views.FontTextView
+                style="@style/TextView.GuillotineItem"
+                android:text="@string/tenth_jobs" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/more_root"
+            style="@style/LinearLayout.GuillotineItem">
+
+            <com.ghn.android.views.ExpandablePanel
+                android:id="@+id/expadable_panel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                example:animationDuration="100"
+                example:content="@+id/value"
+                example:handle="@+id/expand">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@id/value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/upload_news_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/upload_news_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="Upload News" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/desh_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/desh_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="@string/railway_jobs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/videsh_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/videsh_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="@string/ssc_jobs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rashifal_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/rashifal_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="@string/psc_jobs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/health_tips_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/health_tips_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="@string/teaching_jobs" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/election_keeda_group"
+                            style="@style/LinearLayout.GuillotineItem">
+
+                            <ImageView
+                                style="@style/ImageView.GuillotineItem"
+                                android:src="@drawable/ic_action_plug" />
+
+                            <com.ghn.android.views.FontTextView
+                                android:id="@+id/election_keeda_tittle"
+                                style="@style/TextView.GuillotineItem"
+                                android:text="@string/results" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/expand"
+                        style="@style/LinearLayout.GuillotineItem"
+                        android:layout_below="@id/value">
+
+                        <ImageView
+                            android:id="@+id/more_icon"
+                            style="@style/ImageView.GuillotineItem"
+                            android:src="@drawable/ic_action_more" />
+
+                        <com.ghn.android.views.FontTextView
+                            android:id="@+id/more_text"
+                            style="@style/TextView.GuillotineItem"
+                            android:text="MORE" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.ghn.android.views.ExpandablePanel>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
